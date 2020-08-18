@@ -1,0 +1,48 @@
+body{
+	margin: 0px;
+}
+#container{
+	height: 100vw;
+	display: grid;
+	grid-template-areas:
+	"h h h h h" 
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s m m m m"
+	"s f f f f";
+}
+
+
+.head{
+	grid-area: h;
+	background-color: #F45D0B;
+	
+}
+
+.ul1{
+	display:grid;
+	grid-template-columns:repeat(4, 1fr) ;
+	grid-column-end: center;
+}
+
+.main{
+	grid-area: m;
+	background-color: #CCFCFF;
+}
+
+.side-nav{
+	grid-area: s;
+	background-color: #707CEB;
+}
+
+.footer{
+	grid-area: f;
+	background-color: #B7C8C1;
+}
